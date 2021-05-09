@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ToDoList</h1>
+    <div class="flex-wrapper">
+        <div class="add-todo-wrapper">
+            <div class="input-wrapper">
+                <input onkeydown="return checkPhoneKey(event.key)" placeholder="Задача" type="text" id="description-task">
+            </div>
+            <div class="button-wrapper">
+                <button id="add-task-btn">Добавить</button>
+            </div>
+        </div>
+        <h2>Сегодня:</h2>
+        <div class="todos-wrapper">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
